@@ -268,7 +268,7 @@ Three main configuration objects are required when constructing an experiment bu
    - Defines how to create and configure environments
    - Existing factories:
      - {class}`~tianshou.highlevel.env.EnvFactoryRegistered` - For the creation of environments registered in Gymnasium
-     - {class}`~tianshou.highlevel.env.AtariEnvFactory` - For Atari environments with preprocessing
+     - {class}`~tianshou.highlevel.env.atari.atari_wrapper.AtariEnvFactory` - For Atari environments with preprocessing
    - Custom factories for your own environments can be created by subclassing {class}`~tianshou.highlevel.env.EnvFactory`
 
 2. **Experiment Configuration** ({class}`~tianshou.highlevel.experiment.ExperimentConfig`): 
@@ -354,19 +354,6 @@ You manually create and connect ...
 The training is executed via `algorithm.run_training()`, which takes a trainer parameter object. 
 You can alternatively implement custom training loops (or even your own trainer class) for maximum flexibility.
 
-
-## Choosing Your Path
-
-**Use the high-level API** if ...
-- you are new to Tianshou,
-- you are focused on applying RL to problems,
-- you prefer declarative code.
-
-**Use the procedural API** if ...
-- you are developing new algorithms,
-- you absolutely need maximum flexibility,
-- you are comfortable with RL internals,
-- you prefer imperative code.
 
 ## Additional Resources
 
