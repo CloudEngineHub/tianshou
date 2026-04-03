@@ -1,6 +1,13 @@
-# Unreleased Changes
+# Release 2.0.1 (2026-04-02)
 
-Fixes:
+This is a maintenance release.
+
+**Dependencies:**
+* `pandas` compatibility was adjusted to require version `< 3` (incompatibility detected) #1289 
+
+**Fixes:**
+* `algorithm`:
+  * `TRPO`: Fix original policy parameters not being restored upon line search failure #1287
 * `highlevel.experiment`:
   * Fix `Experiment.run` returning `ExperimentResult` with `trainer_result` unset (None) #1288 
 

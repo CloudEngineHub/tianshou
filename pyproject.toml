@@ -4,7 +4,7 @@ build-backend = "poetry.core.masonry.api"
 
 [tool.poetry]
 name = "tianshou"
-version = "2.0.0"
+version = "2.0.1"
 description = "A Library for Deep Reinforcement Learning"
 authors = ["TSAIL <trinkle23897@gmail.com>"]
 license = "MIT"
@@ -33,7 +33,7 @@ numba = ">=0.60.0"
 numpy = ">=1.24.4"
 overrides = "^7.4.0"
 packaging = "*"
-pandas = ">=2.0.0"
+pandas = ">=2.0.0,<3"
 pettingzoo = "^1.22"
 sensai-utils = ">=1.6.0"
 tensorboard = "^2.5.0"
